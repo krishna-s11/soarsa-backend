@@ -95,8 +95,8 @@ app.use("/api/home", require("./routes/api/homepage"));
 const PORT = process.env.PORT || 4000;
 const TEST_PORT = 6000;
 
-app.listen(TEST_PORT, () => {
-  console.log(`Server started on port ${TEST_PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
 
 //"heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
